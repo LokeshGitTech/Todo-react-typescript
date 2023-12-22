@@ -16,7 +16,8 @@
 }
 
 .input_box:focus {
-    box-shadow: 0 0 10px 1000px #213f5f;
+    /* box-shadow: 0 0 10px 1000px #213f5f; */
+    box-shadow: 2px 2px 2px 2px rgb(46, 233, 9);
     outline: none;
 }
 
@@ -29,17 +30,60 @@
     right: 0px;
     border: none;
     font-size: 15px;
-    background-color: #2f74c0;
+    background-color: #048d0b;
     color: white;
     transition: 0.2s all;
     box-shadow: 0 0 10px black;
 }
 
 .input_submit:hover {
-    background-color: #388ae2;
+    background-color: #33c43a;
 }
 
 .input_submit:active {
     transform: scale(0.8);
     box-shadow: 0 0 20px rgb(36, 201, 45) ;
 }
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.icons {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.todo_single {
+    display: flex;
+    justify-content: space-between;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background: rgb(105,102,49);
+    background: linear-gradient(90deg, rgba(105,102,49,1) 0%, rgba(199,200,15,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.todos_single--text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todo {
+    width: 95%;
+  }
+  .todo_single {
+    width: 100%;
+  }
+}
+
+
